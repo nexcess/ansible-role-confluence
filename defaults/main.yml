@@ -1,9 +1,9 @@
 ---
 # defaults file for hswong3i.confluence
 
-confluence_archive: atlassian-confluence-5.9.8.tar.gz
+confluence_archive: atlassian-confluence-5.9.9.tar.gz
 confluence_catalina: /usr/share/confluence
-confluence_checksum: "sha256:68cabc90dbd7d88a84d09fa4822355c2d0477e8b7017d0be4a939b059cc624a3"
+confluence_checksum: "sha256:e84220e6781949aef1d2e93df5e1dd7d1c793e20099abcf0dff9c04a11686ec4"
 confluence_connector_port: 8090
 confluence_context_path: ~
 confluence_gid: ~
