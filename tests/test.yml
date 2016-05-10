@@ -4,4 +4,7 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-confluence
+    - role: ansible-role-confluence
+      confluence_hash_salt: "faiw8Wa8iyohx8Bo"
+      confluence_pass: "ahle4Boo"
+      confluence_user: "confluence"

@@ -1,21 +1,24 @@
 ---
 # defaults file for hswong3i.confluence
 
-confluence_archive: "atlassian-confluence-5.9.9.tar.gz"
+# required variables
+confluence_gid: ~
+confluence_hash_salt: ~
+confluence_pass: ~
+confluence_uid: ~
+confluence_user: ~
+
+# optional variables with default
+confluence_archive: "atlassian-confluence-5.9.10.tar.gz"
 confluence_catalina: "/usr/share/confluence"
-confluence_checksum: "sha256:e84220e6781949aef1d2e93df5e1dd7d1c793e20099abcf0dff9c04a11686ec4"
+confluence_checksum: "sha256:99c468a765c0ba2a0fb535d87e017ccfdd5be78067370f8b34adc58acccd5bd2"
 confluence_connector_port: "8090"
 confluence_context_path: ~
-confluence_gid: ~
-confluence_hash_salt: "faiw8Wa8iyohx8Bo"
 confluence_home: "/var/lib/confluence"
 confluence_jvm_maximum_memory: "1024m"
 confluence_jvm_minimum_memory: "512m"
 confluence_jvm_support_recommended_args: "-Datlassian.plugins.enable.wait=300"
-confluence_pass: "ahle4Boo"
 confluence_proxy_name: ~
 confluence_scheme: ~
 confluence_server_port: "8000"
-confluence_uid: ~
 confluence_url: "https://downloads.atlassian.com/software/confluence/downloads/{{ confluence_archive }}"
-confluence_user: "confluence"
