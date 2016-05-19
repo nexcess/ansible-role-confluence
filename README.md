@@ -80,7 +80,7 @@ Role Variables
 <tr class="odd">
 <td>confluence_hash_salt</td>
 <td>yes</td>
-<td><a href="https://github.com/pantarei/ansible-role-confluence/blob/master/defaults/main.yml">defaults/main.yml</a></td>
+<td></td>
 <td></td>
 <td>Specific password hash salt for sha512.</td>
 </tr>
@@ -115,7 +115,7 @@ Role Variables
 <tr class="even">
 <td>confluence_pass</td>
 <td>yes</td>
-<td>ahle4Boo</td>
+<td></td>
 <td></td>
 <td>Password for Confluence system user.</td>
 </tr>
@@ -161,7 +161,7 @@ Role Variables
 <tr class="even">
 <td>confluence_user</td>
 <td>yes</td>
-<td>confluence</td>
+<td></td>
 <td></td>
 <td>Username for Confluence system user.</td>
 </tr>
@@ -176,9 +176,12 @@ No additional role dependencies.
 Example Playbook
 ----------------
 
-    - hosts: servers
+    - hosts: all
       roles:
-        - { role: hswong3i.confluence }
+        - role: hswong3i.confluence
+          confluence_hash_salt: "faiw8Wa8iyohx8Bo"
+          confluence_pass: "ahle4Boo"
+          confluence_user: "confluence"
 
 License
 -------
