@@ -35,9 +35,11 @@
 
 - name: download package
   get_url:
-    url: "{{ confluence_url }}"
-    dest: "/tmp/{{ confluence_archive }}"
-    checksum: "{{ confluence_checksum }}"
+    url: "{{ item.url }}"
+    dest: "{{ item.dest }}"
+    checksum: "{{ item.checksum }}"
+  with_items:
+    - { url: "{{ confluence_url }}", dest: "/tmp/{{ confluence_archive }}", checksum: "{{ confluence_checksum }}" }
   tags: hswong3i.confluence
 
 - name: unarchive package
@@ -65,7 +67,9 @@
 
 - name: enable service
   service:
-    name: "confluence"
-    enabled: "yes"
+    name: "{{ item.name }}"
+    enabled: "{{ item.enabled }}"
+  with_items:
+    - { name: "confluence", enabled: "yes" }
   notify: restart confluence
   tags: hswong3i.confluence

@@ -3,5 +3,7 @@
 
 - name: restart confluence
   service:
-    name: "confluence"
-    state: "restarted"
+    name: "{{ item.name }}"
+    state: "{{ item.state }}"
+  with_items:
+    - { name: "confluence", state: "restarted" }
