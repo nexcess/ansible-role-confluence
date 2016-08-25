@@ -9,9 +9,9 @@ confluence_uid: ~
 confluence_user: ~
 
 # optional variables with default
-confluence_archive: "atlassian-confluence-5.10.3.tar.gz"
+confluence_archive: "atlassian-confluence-5.10.4.tar.gz"
 confluence_catalina: "/usr/share/confluence"
-confluence_checksum: "sha256:6e48857c85cdc011e75d52e4d23fa32e9c053051f132d642b284e050fd5735ab"
+confluence_checksum: "sha256:4a080e3c9940240154f6a35a013a353e4f8ea00cc6992dad07097a29320d631f"
 confluence_connector_port: "8090"
 confluence_context_path: ~
 confluence_home: "/var/lib/confluence"
