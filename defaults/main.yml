@@ -15,8 +15,8 @@ confluence_checksum: "sha256:444d9aa26d459ab41e42852799ffcb0ad04d1fe7471b52f8275
 confluence_connector_port: "8090"
 confluence_context_path: ~
 confluence_home: "/var/lib/confluence"
-confluence_jvm_maximum_memory: "1024m"
-confluence_jvm_minimum_memory: "512m"
+confluence_jvm_maximum_memory: "2048m"
+confluence_jvm_minimum_memory: "1024m"
 confluence_jvm_support_recommended_args: "-Datlassian.plugins.enable.wait=300"
 confluence_proxy_name: ~
 confluence_scheme: ~
