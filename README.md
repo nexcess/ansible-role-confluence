@@ -77,13 +77,6 @@ Role Variables
 <td></td>
 <td>Specifying the GID for shared storage. NOTE: This value should only be set once before deploying and then never changed.</td>
 </tr>
-<tr class="odd">
-<td>confluence_hash_salt</td>
-<td>yes</td>
-<td></td>
-<td></td>
-<td>Specific password hash salt for sha512.</td>
-</tr>
 <tr class="even">
 <td>confluence_home</td>
 <td>yes</td>
@@ -117,7 +110,7 @@ Role Variables
 <td>yes</td>
 <td></td>
 <td></td>
-<td>Password for Confluence system user.</td>
+<td>Crypted password for Confluence system user.</td>
 </tr>
 <tr class="odd">
 <td>confluence_proxy_name</td>
@@ -179,8 +172,6 @@ Example Playbook
     - hosts: all
       roles:
         - role: hswong3i.confluence
-          confluence_hash_salt: "faiw8Wa8iyohx8Bo"
-          confluence_pass: "ahle4Boo"
           confluence_user: "confluence"
 
 License
