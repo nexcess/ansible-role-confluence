@@ -1,11 +1,12 @@
 ---
 # defaults file for hswong3i.confluence
 
+# define these if you want to specify them
+# confluence_gid: ~
+# confluence_uid: ~
+# confluence_pass: ~
+
 # required variables
-confluence_gid: ~
-confluence_hash_salt: ~
-confluence_pass: ~
-confluence_uid: ~
 confluence_user: ~
 
 # optional variables with default
